@@ -1,0 +1,20 @@
+#000000 black
+#ffffff white
+rgba(255, 99, 71, 0.5)
+hsla(9, 100%, 64%, 0)
+
+style="color:red"
+style="font-size:60px;"
+style="background-color:powderblue;"
+style="text-align:center;"
+style="border:2px solid Tomato;"
+
+
+style="font-family:verdana;"
+style="font-family:courier;"
+
+
+Inline - by using the style attribute in HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using an external CSS file
+
