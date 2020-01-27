@@ -5,3 +5,7 @@ It is best practice to use relative file paths (if possible).
 
 When using relative file paths, your web pages will not be bound to your current base URL.
 All links will work on your own computer (localhost) as well as on your current public domain and your future public domains. 
+
+Omitting <html>, <head> and <body>?
+Omitting these tags can crash DOM or XML software and produce errors in older browsers
+According to the HTML5 standard; the <html>, the <body>, and the <head> tag can be omitted.
