@@ -15,6 +15,6 @@ style="font-family:courier;"
 
 
 Inline - by using the style attribute in HTML elements
-Internal - by using a <style> element in the <head> section
-External - by using an external CSS file
+Internal - by using a <style> element in the <head> section 
+External - by using an external CSS file  <link rel="stylesheet" href="mystyle.css">
 
