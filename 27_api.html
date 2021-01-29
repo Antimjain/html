@@ -1,0 +1,40 @@
+1.Geolocation API
+  getCurrentPosition()
+  watchPosition()
+  clearWatch() - Stops the watchPosition() method.
+
+
+2. Drag and Drop API
+
+3. Web Storage API
+  window.localStorage - stores data with no expiration date
+                        localStorage.setItem("lastname", "antim");
+                        localStorage.getItem("lastname");
+                        localStorage.removeItem("lastname");
+  window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)
+
+
+4. Web Workers API
+  A web worker is a JavaScript running in the background, without affecting the performance of the page.
+  postMessage() => which is used to post a message back to the HTML page.
+  terminate() => terminate
+
+  external file so doesn't support
+    The window object
+    The document object
+    The parent object
+
+5. SSE API server side event
+Server-Sent Events (SSE) allow a web page to get updates from a server.
+One Way Messaging
+
+var source = new EventSource("demo_sse.php");
+source.onmessage = function(event) {
+  document.getElementById("result").innerHTML += event.data + "<br>";
+};
+
+The EventSource Object
+Events	Description
+onopen	When a connection to the server is opened
+onmessage	When a message is received
+onerror	When an error occurs

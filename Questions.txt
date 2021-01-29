@@ -1,0 +1,247 @@
+question 
+1. dont want any border => border:none
+2. on button click it should have to display current date
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+3. id is given to p element and want to display some text using js
+    <h2>Use JavaScript to Change Text</h2>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+    <p id="demo"></p>
+
+    <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script> 
+
+4. file path
+5. &nbsp -> non breaking space
+6. get post difference
+    Notes on GET: not secure, bookmark, key value data , 2048 char limit
+    post: secure, not bookmark, http req, no limit
+7. select form element option selected =>selected size="3" multiple
+8. input readonly, disabled, value, size="50" maxlength="4", min, max, multiple, placeholder, required, step="3"
+9. HTML5 new form tag output datalist, keygen, meter, progressbar
+10 what is dom how is works? - dom is a cross platform api,html document as tree structure consisting of node document.getElementById(), document.querySelector()
+11.What does a <DOCTYPE html> do?  document structured (i.e. a button can contain a span but not a div)
+    recognized a correct DOCTYPE => no-quirks mode
+    older browser                => quirks mode
+
+12.How does the browser rendering engine work?
+    Document Object Model(DOM)
+    CSS object model(CSSOM)
+    Render Tree
+    Layout
+    Paint
+
+
+13. What are the building blocks of HTML5?
+    Semantics
+    Connectivity
+    Offline and storage
+    Multimedia
+    2D/3D graphics and effects
+    Performance and integration
+    Device access
+    Styling
+
+14. cookies, sessionStorage, localStorage
+    cookie: A text file saved on the users computer to store and retrieve data, 4kb
+    sessionStorage: Is memory space in a browser to save temporary data until the window or tab is closed. 5MB
+    localStorage: Like cookie, where data can be saved and retrieved after browser sessions, but stored in memory like sessionStorage. Data is stored as plain key value pairs and can be stored as Json objects. 5MB
+
+15. What are the Benefits of Server Side Rendering (SSR) Over Client Side Rendering (CSR)?
+    performance benefit for our customers
+    Consistent SEO performance
+
+16.  What does async and defer refer in script tag? Describe the difference between <script>, <script async> and <script defer>
+17.  Can you describe the difference between progressive enhancement and graceful degradation?
+18.  What is the purpose of cache busting and how can you achieve it?
+    cache performance and faster purpose, can cause problems when the website has been changed by developers
+    Cache busting is the process of forcing the browser to download the new files. This is done by naming the file something different to the old file.
+
+19. Name 3 ways to decrease page load?
+    LocalStorage
+    Caching resources
+    DNS-prefetch (sample below)
+    Keep resources on a CDN
+
+20. What ARIA and screenreaders are, and how to make a website accessible?
+    disable people 
+
+21. Explain some of the pros and cons for CSS animations versus JavaScript animations?
+22. What is difference between Select and Datalist?
+    options to the users to select or else enter - Datalist
+    need to select one of them - select
+
+23. What does enctype='multipart/form-data' mean?
+    enctype="application/x-www-form-urlencoded"
+    enctype="text/plain"
+    enctype="multipart/form-data"
+
+24, What is the use of WebSocket API?
+    2 way communication server to browser and vice versa
+
+25. How you can Use Modernizr in HTML5?
+    browser support for html5 and css3
+    if don't so provide fallback
+    //js
+    if (Modernizr.canvas) {
+        alert("This browser supports HTML5 canvas!");
+    } else {
+        alert("no canvas :(");
+    }
+
+    //css (no-classname)
+    .no-cssgradients .header {
+        background: url("images/glossybutton.png");
+    }
+
+    .cssgradients .header {
+        background-image: linear-gradient(cornflowerblue, rebeccapurple);
+    }
+
+
+26. What are the HTML tags which deprecated in HTML5?
+    frame, frameset, acronym, applet
+
+27. What are different new form element types provided by HTML5?
+    date, datetime, datetime-local, month, week, number, url, email, color
+
+28. List the API available in HTML5?
+    1. High Resolution Time API
+        var time = performance.now(); //millisecond 
+    2. User Timing API 
+        performance of a section of JavaScript code.
+
+        performance.mark("startFoo");
+        // A time consuming function
+        foo();
+        performance.mark("endFoo");
+
+        performance.measure("durationFoo", "startFoo", "endFoo");
+
+    3. Network Information API
+        window.navigator
+        navigator.connection.type
+
+    4. Vibration API
+        // Vibrate once for 2 seconds
+        navigator.vibrate(2000);
+
+    5. Battery Status API
+        // Retrieves the percentage of the current level of the device's battery
+        var percentageLevel = navigator.battery.level * 100;
+    
+    6. Page Visibility API -> page not visible don't do unneccessary task
+
+    7. Fullscreen API 
+        requestFullscreen()
+        exitFullscreen()
+
+
+29. Explain Microdata in HTML5?
+    lets you define your own customized elements 
+    itemscope:- To create an item
+    itemprop:- To add a property to an item
+
+30. Explain Application Cache in HTML5. OR What is a manifest file in HTML?
+    Using an application cache gives an application the following benefits:
+
+    Offline browsing: users can navigate a site even when they are offline.
+    Speed: cached resources are local, and therefore load faster.
+    Reduced server load: the browser only downloads resources that have changed from the server.
+
+
+31. Why to use IndexedDB instead of WebSQL in HTML5?
+    WebSQL is an API that is only supported in Chrome and Safari (and Android and iOS by extension).
+        fast asyn api, performance, easy to maintain, robust, SQL
+        It provides an asynchronous, transactional interface to SQLite. Since 2010, it has been deprecated in favor of IndexedDB.
+
+        deprecated because IE, firefox
+        requiring knowledge of relational databases and SQL.
+
+    IndexedDB - browser db, support browser, successor to both LocalStorage and WebSQL
+                fast , performance, browser support
+
+
+32. How Geo-location API works in html5?
+    navigator.geolocation
+
+33. What is a self closing tag?
+    <br/>
+    <meta/>
+
+34. What are optional closing tag?
+    <p>, <li>, <td>, <tr>, <th>, <html>, <body>
+
+35. How to make page responsive?
+    Setting the viewport
+    Responsive Images
+    how different Images depending on Browser Width picture tag 
+    Responsive Text Size
+    Media Queries
+
+36. Why you would like to use semantic tag?
+    Search Engine Optimization, accessibility, repurposing, light code.
+    readibility
+
+37. Explain about HTML Layout Engines used by browsers?
+    WebKit, Blink, Gecko
+
+38. What is desktop first and mobile first design approach?
+    In desktop first approach the media queries will be written with respect to max-width whereas 
+    in mobile first approach media queries will be written with respect to min-width
+
+
+Chrome:
+Layout rendering engine Webkit.
+JavaScript engine V8
+
+39. Ways to improve website performance
+    Minimize HTTP Requests
+    Use a Content Delivery Network CDN
+    Optimize Images
+    Put Scripts at the Bottom
+    Add an Expires or a Cache-Control Header
+    Put Stylesheets at the Top
+    Use AJAX Requests and get method
+    No 404s
+    Make JavaScript and CSS External
+    Reduce Cookie Size
+    Reduce DNS Lookups
+    Minify JavaScript and CSS
+    Avoid Redirects
+    Remove Duplicate Scripts
+    Configure Etags
+    Make Ajax Cacheable
+    Post-load Components
+    Preload Components
+    Reduce the Number of DOM Elements
+    Minimize the Number of iframes
+    Minimize DOM Access
+    Optimize CSS Sprites
+    Don't Scale Images in HTML
+    Make favicon.ico Small and Cacheable
+    Avoid Empty Image src
+
+
+Q. What does CORS stand for and what issue does it address?
+Cross-Origin Resource Sharing (CORS)
+
+23) What are empty elements?
+HTML elements with no content are called empty elements. For example: <br>, <hr> etc.
+
+
+How to create a new HTML element?
+<script>
+document.createElement﴾"myElement"﴿
+</script>
+
+<myElement>hello edureka!</myElement>
+
+Inline style takes priority over embedded style sheets, which takes priority over external style sheets.
+HTML elements communicate to the Browser how to represent the text. They become HTML tags when enclosed within angular brackets <>.

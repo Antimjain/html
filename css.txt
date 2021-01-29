@@ -8,6 +8,8 @@ style="font-size:60px;"
 style="background-color:powderblue;"
 style="text-align:center;"
 style="border:2px solid Tomato;"
+style="display: inline-block";
+style="text-decoration: none;"
 
 
 style="font-family:verdana;"
@@ -18,3 +20,14 @@ Inline - by using the style attribute in HTML elements
 Internal - by using a <style> element in the <head> section
 External - by using an external CSS file
 
+
+grid
+flexbox
+float
+
+
+responsive
+1.viewport
+2.max-width:100% pic
+3.media query
+4.<h1 style="font-size:10vw">Hello World</h1>
