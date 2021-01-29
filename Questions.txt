@@ -18,14 +18,20 @@ question
     </script> 
 
 4. file path
+
 5. &nbsp -> non breaking space
+
 6. get post difference
     Notes on GET: not secure, bookmark, key value data , 2048 char limit
     post: secure, not bookmark, http req, no limit
 7. select form element option selected =>selected size="3" multiple
+
 8. input readonly, disabled, value, size="50" maxlength="4", min, max, multiple, placeholder, required, step="3"
+
 9. HTML5 new form tag output datalist, keygen, meter, progressbar
+
 10 what is dom how is works? - dom is a cross platform api,html document as tree structure consisting of node document.getElementById(), document.querySelector()
+
 11.What does a <DOCTYPE html> do?  document structured (i.e. a button can contain a span but not a div)
     recognized a correct DOCTYPE => no-quirks mode
     older browser                => quirks mode
@@ -141,7 +147,10 @@ question
     7. Fullscreen API 
         requestFullscreen()
         exitFullscreen()
-
+    8. drag and drop
+    9. ssr 
+    10. web workers, web storage
+    11. geolocation
 
 29. Explain Microdata in HTML5?
     lets you define your own customized elements 
@@ -229,19 +238,28 @@ JavaScript engine V8
     Avoid Empty Image src
 
 
-Q. What does CORS stand for and what issue does it address?
+40. What does CORS stand for and what issue does it address?
 Cross-Origin Resource Sharing (CORS)
 
-23) What are empty elements?
+localhost:3000 ==========> server ============> localhost:3000
+                <=========  call success <===== 
+
+domain1 ==========> server ============> localhost:3000
+        <=========  call failed different origin <===== 
+
+domain2  ==========> server ============> localhost:3000 (cors enable for domain2)
+        <=========  call success different origin <===== 
+
+41. What are empty elements?
 HTML elements with no content are called empty elements. For example: <br>, <hr> etc.
 
 
-How to create a new HTML element?
+42. How to create a new HTML element?
 <script>
 document.createElement﴾"myElement"﴿
 </script>
 
 <myElement>hello edureka!</myElement>
 
-Inline style takes priority over embedded style sheets, which takes priority over external style sheets.
-HTML elements communicate to the Browser how to represent the text. They become HTML tags when enclosed within angular brackets <>.
+43. Inline style takes priority over embedded style sheets, which takes priority over external style sheets.
+44. HTML elements communicate to the Browser how to represent the text. They become HTML tags when enclosed within angular brackets <>.
